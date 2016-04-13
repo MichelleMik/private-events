@@ -1,0 +1,8 @@
+<h1><%= @user.name %></h1>
+<%  if @user.events %>
+<% @user.events.each do |event| %>
+    <%= event.name %> <br>
+    <%= event.description %> <br>
+    <%= event.date %><br>
+  <% end %>
+<% end %>
